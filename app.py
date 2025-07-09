@@ -25,7 +25,7 @@ summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
 
 @st.cache_data
 def fetch_news():
-    url = f"https://newsapi.org/v2/top-headlines?country=in&language=en&pageSize=5&apiKey={NEWS_API_KEY}"
+    url = f"https://newsapi.org/v2/top-headlines?language=en&pageSize=5&category=technology&q=India&apiKey={NEWS_API_KEY}"
     response = requests.get(url)
 
     # Debugging output
