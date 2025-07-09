@@ -1,4 +1,6 @@
 import streamlit as st
+st.set_option('client.showErrorDetails', True)
+
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
