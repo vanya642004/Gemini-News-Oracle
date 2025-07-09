@@ -1,5 +1,6 @@
 streamlit
 transformers
 torch
-requests-html
+requests
+beautifulsoup4
 google-generativeai
